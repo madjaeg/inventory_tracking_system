@@ -42,5 +42,5 @@ out-of-stock.php<br/>
 -Will prompt the user for a name, so that the deletion can be recorded in Change Log properly.<br/>
 
 change-log.php<br/>
--Seperate MySQL database table that lists all changes that have been made to the inventory list. Tracks names, item names, number in stock, amount changes, updated number in stock, events, and date/time.<br/>
--Is paginated; shows 20 entires per page. This can be altered in change-log.php on line 17.<br/>
+-Seperate MySQL database table that lists all changes that have been made to the inventory list. Tracks names, item names, number in stock, amount changes, updated number in stock, events (what an item was requested/restocked for), and date/time.<br/>
+-Is paginated; shows 20 entries per page. This can be altered in change-log.php on line 17.<br/>
