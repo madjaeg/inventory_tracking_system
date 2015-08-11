@@ -1,0 +1,174 @@
+@font-face{ font-family: Calibri; src: url(fonts/calibri.TTF); }
+
+body{ font-family:Calibri, Arial, sans-serif; font-size:17px; }
+
+h1{
+	margin-bottom:5px;
+	font-family:"Open Sans", sans-serif;
+	color:#333;
+	font-weight:300;
+}
+
+h2{
+	margin-bottom:0px;
+	text-align:center;
+	font-family:"Open Sans", sans-serif;
+	color:#333;
+}
+
+h3{
+	color:#333;
+	font-size:17px;
+	text-align:center;
+	font-weight:normal;	
+}
+
+.btn{
+	font-family:Calibri, Arial, sans-serif;
+	letter-spacing:1px;
+	font-size:17px;
+	background:#333;
+	color:#FEBD01;
+	border:none;
+	padding:15px;
+	margin-top:20px;
+	float:right;
+	border-radius:10px;
+}
+.btn:hover{ color:#FFF; }
+
+.deleteBtn{ float:none; margin-top:0; }
+
+/* BODY
+-------------------------------------------------- */
+/* Div for displaying errors on forms */
+.error{
+	color:#a94442;
+	background-color:#f2dede;
+	padding:15px;
+	margin:20px auto;
+	border:1px solid #ebccd1;
+	border-radius:4px;
+	text-align:center;
+	width:335px;
+	text-align:left;
+}
+.error img{ height:20px; }
+/* Border around inputs the user filled in incorrectly */
+.error-style{ border:2px solid red; }
+
+/* Div for displaying success message on forms */
+.success{
+	color:#3c763d;
+	background-color:#dff0d8;
+	padding:15px;
+	margin:20px auto;
+	border:1px solid #d6e9c6;
+	border-radius:4px;
+	text-align:center;
+	width:335px;
+}
+.success img{ height:20px; }
+
+/* Wrapper for entire page */
+#wrapper-div{ width:1200px; margin:0 auto; }
+
+/* Background around main content */
+#background-div{ background:#F0F0F0; padding-bottom:50px; overflow:hidden; }
+
+/* Div that wraps around the table and button so that they align */
+#btn-wrapper{ width:95%; margin:0 auto; overflow:hidden; }
+
+/* NAV BAR
+-------------------------------------------------- */
+#navBar{
+    background:#333;
+	letter-spacing:1px;
+    height:3em;
+	margin-top:0px;
+	border-radius:10px 10px 0 0;
+}
+.navBar{
+    text-decoration:none;
+    color:#FFF;
+    line-height:3em;
+    display:block;
+    padding:0 10px 0 10px;
+    font-family:"Open Sans", sans-serif;
+}
+.navBar:hover{ color:#FEBD01; }
+
+.current { position: relative; color:#FEBD01; }
+.current:after, .current:before{
+	top:100%;
+	left:50%;
+	border:solid transparent;
+	content:" ";
+	height:0;
+	width:0;
+	position:absolute;
+	pointer-events:none;
+}
+.current:after{
+	border-color:rgba(136, 183, 213, 0);
+	border-top-color:#333;
+	border-width:15px;
+	margin-left:-15px;
+}
+
+/* Left nav links: Inventory List, Request Items, Restock Items*/
+.userTools{ float:left; }
+
+/* Right nav links: Add New Items, Out of Stock, Change Log*/
+.adminTools{ float:right; }
+
+/* TABLES
+-------------------------------------------------- */
+.inventoryTable, .mainTable{
+	width:70%;
+	margin:0 auto;
+	border-collapse:collapse;
+	text-align:center;
+}
+/* mainTable is wider than inventoryTable */
+.mainTable{ width:100%; }
+
+.inventoryTable th, .mainTable th{
+    vertical-align:top;
+    font-family:"Open Sans", sans-serif;
+    letter-spacing:1px;
+	background:#333;
+	color:#FEBD01;
+	font-weight:bold;
+	font-size:14px;
+	text-align:center;
+	padding:10px;
+	border:1px solid #CCC;
+}
+.inventoryTable td, .mainTable td{ 
+	padding:10px;
+	border:1px solid #CCC;
+	-moz-box-shadow:inset 1px 1px #FFF;
+	-webkit-box-shadow:inset 1px 1px #FFF;
+	box-shadow:inset 1px 1px #FFF;
+}
+.inventoryTable tr:nth-child(odd), .mainTable tr:nth-child(odd){ background:#FFF; }
+
+/* CHANGE LOG
+-------------------------------------------------- */
+.sort{ width:100%; margin:0 auto 10px; }
+.sort a{ text-decoration: none; color:#97A6B9; }
+.sort a:hover{ color:#333; }
+
+.pageination{ margin:0 auto; width:100%; text-align: center; }
+.pageination-link{
+	text-decoration:none;
+	background:#333;
+  	color:#FEBD01;
+  	padding:10px;
+  	border-radius:10px;
+  	margin:5px;
+}
+.pageination-arrow{
+	font-size:15px;
+}
